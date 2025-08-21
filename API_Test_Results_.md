@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "0a856c29-c2e9-4f2e-adb3-97bbe9c78802",
+		"name": "API Edge Cases",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33903377"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							" pm.test(\"Status code is 200, 400, or 401\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 400, 401]);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "GET https://petstore.swagger.io/v2/user/login?username=&password=\n",
+					"protocol": "GET https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": ""
+						},
+						{
+							"key": "password",
+							"value": "\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							" pm.test(\"Status code is 200, 400, or 401\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 400, 401]);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "GET https://petstore.swagger.io/v2/user/login?username=!!!@@@&password=###$$$\n",
+					"protocol": "GET https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "!!!@@@"
+						},
+						{
+							"key": "password",
+							"value": ""
+						}
+					],
+					"hash": "##$$$\n"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							" pm.test(\"Status code is 200, 400, or 401\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 400, 401]);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "GET https://petstore.swagger.io/v2/user/login?username=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&password=test123\n",
+					"protocol": "GET https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+						},
+						{
+							"key": "password",
+							"value": "test123\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
