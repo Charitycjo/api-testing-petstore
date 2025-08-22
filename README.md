@@ -15,7 +15,7 @@ This project demonstrates my ability to design and execute both **UI and API tes
 ## 🔹 Skills Demonstrated
 - UI **automation testing** with Cypress  
 - Writing and executing **edge case tests**  
-- Using **Postman** for API validation (if applicable)  
+- Using **Postman** for API validation 
 - Clear documentation in **Markdown**  
 - Version control with **GitHub**
 
