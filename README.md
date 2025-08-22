@@ -12,13 +12,13 @@ This project demonstrates my ability to design and execute both **UI and API tes
   -  API Test Results (`API_Test_Results.md`)
   -  Edge Case List (`Edge_Case_List.md`)
 
-##  Skills Demonstrated
-- End-to-end **automation testing** (UI + API)
-- Writing and executing **edge case tests**
-- Using **Postman** for API validation
-- Using **Cypress** for UI automation
-- Clear documentation in **Markdown**
+## 🔹 Skills Demonstrated
+- UI **automation testing** with Cypress  
+- Writing and executing **edge case tests**  
+- Using **Postman** for API validation (if applicable)  
+- Clear documentation in **Markdown**  
 - Version control with **GitHub**
+
 
 ## Value
 This project reflects my ability to:
